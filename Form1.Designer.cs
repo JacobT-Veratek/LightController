@@ -56,6 +56,7 @@
             this.g_2_interval = new System.Windows.Forms.TextBox();
             this.blink_all = new System.Windows.Forms.Button();
             this.blink_all_interval = new System.Windows.Forms.TextBox();
+            this.simultaneous_start = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // green_1
@@ -148,7 +149,7 @@
             // 
             // On_All
             // 
-            this.On_All.Location = new System.Drawing.Point(713, 12);
+            this.On_All.Location = new System.Drawing.Point(12, 272);
             this.On_All.Name = "On_All";
             this.On_All.Size = new System.Drawing.Size(75, 23);
             this.On_All.TabIndex = 8;
@@ -158,7 +159,7 @@
             // 
             // Off_All
             // 
-            this.Off_All.Location = new System.Drawing.Point(713, 41);
+            this.Off_All.Location = new System.Drawing.Point(137, 272);
             this.Off_All.Name = "Off_All";
             this.Off_All.Size = new System.Drawing.Size(75, 23);
             this.Off_All.TabIndex = 9;
@@ -304,7 +305,7 @@
             // 
             // blink_all
             // 
-            this.blink_all.Location = new System.Drawing.Point(713, 132);
+            this.blink_all.Location = new System.Drawing.Point(74, 301);
             this.blink_all.Name = "blink_all";
             this.blink_all.Size = new System.Drawing.Size(75, 23);
             this.blink_all.TabIndex = 26;
@@ -314,16 +315,27 @@
             // 
             // blink_all_interval
             // 
-            this.blink_all_interval.Location = new System.Drawing.Point(713, 158);
+            this.blink_all_interval.Location = new System.Drawing.Point(74, 330);
             this.blink_all_interval.Name = "blink_all_interval";
             this.blink_all_interval.Size = new System.Drawing.Size(75, 20);
             this.blink_all_interval.TabIndex = 27;
+            // 
+            // simultaneous_start
+            // 
+            this.simultaneous_start.Location = new System.Drawing.Point(137, 243);
+            this.simultaneous_start.Name = "simultaneous_start";
+            this.simultaneous_start.Size = new System.Drawing.Size(77, 23);
+            this.simultaneous_start.TabIndex = 28;
+            this.simultaneous_start.Text = "START_ALL";
+            this.simultaneous_start.UseVisualStyleBackColor = true;
+            this.simultaneous_start.Click += new System.EventHandler(this.simultaneous_start_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(226, 366);
+            this.Controls.Add(this.simultaneous_start);
             this.Controls.Add(this.blink_all_interval);
             this.Controls.Add(this.blink_all);
             this.Controls.Add(this.g_2_interval);
@@ -389,6 +401,7 @@
         private System.Windows.Forms.TextBox g_2_interval;
         private System.Windows.Forms.Button blink_all;
         private System.Windows.Forms.TextBox blink_all_interval;
+        private System.Windows.Forms.Button simultaneous_start;
     }
 }
 

@@ -130,5 +130,10 @@ namespace LightController
 
             port.Write(blinkAllCommand);
         }
+
+        private void simultaneous_start_Click(object sender, EventArgs e)
+        {
+            port.Write("simul start\n");
+        }
     }
 }
