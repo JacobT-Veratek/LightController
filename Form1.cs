@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.IO.Ports;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace LightController
 {
@@ -22,110 +23,112 @@ namespace LightController
             port.Open();
         }
 
-        
+        void OnOff(System.Windows.Forms.CheckBox checkBox,int num)
+        {
+                if (checkBox.Checked == true) {
+                    string onCommand = string.Format("On {0}\n", num);
+                    port.Write(onCommand);
+                }
+                else
+                {
+                    string offCommand = string.Format("Off {0}\n", num);
+                    port.Write(offCommand);
+                }
+        }
+
+        void BlinkLed(int num, System.Windows.Forms.TextBox ledInterval)
+        {
+            string intervalText = ledInterval.Text;
+            int interval = int.Parse(intervalText);
+
+            string blinkCommand = string.Format("Blink {0} {1}\n", num, interval);
+            
+            port.Write(blinkCommand);
+        }
 
         private void green_1_CheckedChanged(object sender, EventArgs e)
         {
-            if (green_1.Checked == true)
-            {
-                port.Write("On 0\n");
-            }
-            else
-            {
-                port.Write("Off 0\n");
-            }
+            OnOff(green_1, 0);
         }
-
         private void green_2_CheckedChanged(object sender, EventArgs e)
         {
-            if (green_2.Checked == true)
-            {
-                port.Write("On 1\n");
-            }
-            else
-            {
-                port.Write("Off 1\n");
-            }
+            OnOff(green_2, 1);
         }
-
         private void red_1_CheckedChanged(object sender, EventArgs e)
         {
-            if (red_1.Checked == true)
-            {
-                port.Write("On 2\n");
-            }
-            else
-            {
-                port.Write("Off 2\n");
-            }
+            OnOff(red_1, 2);
         }
-
         private void red_2_CheckedChanged(object sender, EventArgs e)
         {
-            if (red_2.Checked == true)
-            {
-                port.Write("On 3\n");
-            }
-            else
-            {
-                port.Write("Off 3\n");
-            }
+            OnOff(red_2, 3);
         }
-
         private void yellow_1_CheckedChanged(object sender, EventArgs e)
         {
-            if (yellow_1.Checked == true)
-            {
-                port.Write("On 4\n");
-            }
-            else
-            {
-                port.Write("Off 4\n");
-            }
+            OnOff(yellow_1, 4);
         }
         private void yellow_2_CheckedChanged(object sender, EventArgs e)
         {
-            if (yellow_2.Checked == true)
-            {
-                port.Write("On 5\n");
-            }
-            else
-            {
-                port.Write("Off 5\n");
-            }
+            OnOff(yellow_2, 5);
         }
         private void blue_1_CheckedChanged(object sender, EventArgs e)
         {
-            if (blue_1.Checked == true)
-            {
-                port.Write("On 6\n");
-            }
-            else
-            {
-                port.Write("Off 6\n");
-            }
+            OnOff(blue_1, 6);
         }
-
         private void blue_2_CheckedChanged(object sender, EventArgs e)
         {
-            if (blue_2.Checked == true)
-            {
-                port.Write("On 7\n");
-            }
-            else
-            {
-                port.Write("Off 7\n");
-            }
+            OnOff(blue_2, 7);
         }
 
         private void On_All_Click(object sender, EventArgs e)
         {
             port.Write("On all\n");
         }
-
         private void Off_All_Click(object sender, EventArgs e)
         {
             port.Write("Off all\n");
+        }
+
+        private void blink_g_1_Click(object sender, EventArgs e)
+        {
+            BlinkLed(0, g_1_interval);
+        }
+        private void blink_g_2_Click(object sender, EventArgs e)
+        {
+            BlinkLed(1, g_2_interval);
+        }
+        private void blink_r_1_Click(object sender, EventArgs e)
+        {
+            BlinkLed(2, r_1_interval);
+        }
+        private void blink_r_2_Click(object sender, EventArgs e)
+        {
+            BlinkLed(3, r_2_interval);
+        }
+        private void blink_y_1_Click(object sender, EventArgs e)
+        {
+            BlinkLed(4, y_1_interval); ;
+        }
+        private void blink_y_2_Click(object sender, EventArgs e)
+        {
+            BlinkLed(5, y_2_interval);
+        }
+        private void blink_b_1_Click(object sender, EventArgs e)
+        {
+            BlinkLed(6, y_1_interval);
+        }
+        private void blink_b_2_Click(object sender, EventArgs e)
+        {
+            BlinkLed(7, y_2_interval);
+        }
+
+        private void blink_all_Click(object sender, EventArgs e)
+        {
+            string intervalText = blink_all_interval.Text;
+            int interval = int.Parse(intervalText);
+
+            string blinkAllCommand = string.Format("Blink all {0}\n", interval);
+
+            port.Write(blinkAllCommand);
         }
     }
 }

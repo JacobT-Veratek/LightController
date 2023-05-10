@@ -38,6 +38,24 @@
             this.blue_2 = new System.Windows.Forms.CheckBox();
             this.On_All = new System.Windows.Forms.Button();
             this.Off_All = new System.Windows.Forms.Button();
+            this.blink_g_1 = new System.Windows.Forms.Button();
+            this.g_1_interval = new System.Windows.Forms.TextBox();
+            this.blink_r_1 = new System.Windows.Forms.Button();
+            this.blink_r_2 = new System.Windows.Forms.Button();
+            this.blink_g_2 = new System.Windows.Forms.Button();
+            this.blink_y_1 = new System.Windows.Forms.Button();
+            this.blink_y_2 = new System.Windows.Forms.Button();
+            this.blink_b_1 = new System.Windows.Forms.Button();
+            this.blink_b_2 = new System.Windows.Forms.Button();
+            this.b_2_interval = new System.Windows.Forms.TextBox();
+            this.b_1_interval = new System.Windows.Forms.TextBox();
+            this.y_2_interval = new System.Windows.Forms.TextBox();
+            this.y_1_interval = new System.Windows.Forms.TextBox();
+            this.r_2_interval = new System.Windows.Forms.TextBox();
+            this.r_1_interval = new System.Windows.Forms.TextBox();
+            this.g_2_interval = new System.Windows.Forms.TextBox();
+            this.blink_all = new System.Windows.Forms.Button();
+            this.blink_all_interval = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // green_1
@@ -148,11 +166,182 @@
             this.Off_All.UseVisualStyleBackColor = true;
             this.Off_All.Click += new System.EventHandler(this.Off_All_Click);
             // 
+            // blink_g_1
+            // 
+            this.blink_g_1.Location = new System.Drawing.Point(88, 6);
+            this.blink_g_1.Name = "blink_g_1";
+            this.blink_g_1.Size = new System.Drawing.Size(75, 23);
+            this.blink_g_1.TabIndex = 10;
+            this.blink_g_1.Text = "BLINK_G1";
+            this.blink_g_1.UseVisualStyleBackColor = true;
+            this.blink_g_1.Click += new System.EventHandler(this.blink_g_1_Click);
+            // 
+            // g_1_interval
+            // 
+            this.g_1_interval.Location = new System.Drawing.Point(169, 6);
+            this.g_1_interval.Name = "g_1_interval";
+            this.g_1_interval.Size = new System.Drawing.Size(43, 20);
+            this.g_1_interval.TabIndex = 11;
+            // 
+            // blink_r_1
+            // 
+            this.blink_r_1.Location = new System.Drawing.Point(88, 70);
+            this.blink_r_1.Name = "blink_r_1";
+            this.blink_r_1.Size = new System.Drawing.Size(75, 23);
+            this.blink_r_1.TabIndex = 12;
+            this.blink_r_1.Text = "BLINK_R1";
+            this.blink_r_1.UseVisualStyleBackColor = true;
+            this.blink_r_1.Click += new System.EventHandler(this.blink_r_1_Click);
+            // 
+            // blink_r_2
+            // 
+            this.blink_r_2.Location = new System.Drawing.Point(88, 95);
+            this.blink_r_2.Name = "blink_r_2";
+            this.blink_r_2.Size = new System.Drawing.Size(75, 23);
+            this.blink_r_2.TabIndex = 13;
+            this.blink_r_2.Text = "BLINK_R2";
+            this.blink_r_2.UseVisualStyleBackColor = true;
+            this.blink_r_2.Click += new System.EventHandler(this.blink_r_2_Click);
+            // 
+            // blink_g_2
+            // 
+            this.blink_g_2.Location = new System.Drawing.Point(88, 31);
+            this.blink_g_2.Name = "blink_g_2";
+            this.blink_g_2.Size = new System.Drawing.Size(75, 23);
+            this.blink_g_2.TabIndex = 14;
+            this.blink_g_2.Text = "BLINK_G2";
+            this.blink_g_2.UseVisualStyleBackColor = true;
+            this.blink_g_2.Click += new System.EventHandler(this.blink_g_2_Click);
+            // 
+            // blink_y_1
+            // 
+            this.blink_y_1.Location = new System.Drawing.Point(88, 130);
+            this.blink_y_1.Name = "blink_y_1";
+            this.blink_y_1.Size = new System.Drawing.Size(75, 23);
+            this.blink_y_1.TabIndex = 15;
+            this.blink_y_1.Text = "BLINK_Y1";
+            this.blink_y_1.UseVisualStyleBackColor = true;
+            this.blink_y_1.Click += new System.EventHandler(this.blink_y_1_Click);
+            // 
+            // blink_y_2
+            // 
+            this.blink_y_2.Location = new System.Drawing.Point(88, 155);
+            this.blink_y_2.Name = "blink_y_2";
+            this.blink_y_2.Size = new System.Drawing.Size(75, 23);
+            this.blink_y_2.TabIndex = 16;
+            this.blink_y_2.Text = "BLINK_Y2";
+            this.blink_y_2.UseVisualStyleBackColor = true;
+            this.blink_y_2.Click += new System.EventHandler(this.blink_y_2_Click);
+            // 
+            // blink_b_1
+            // 
+            this.blink_b_1.Location = new System.Drawing.Point(88, 190);
+            this.blink_b_1.Name = "blink_b_1";
+            this.blink_b_1.Size = new System.Drawing.Size(75, 23);
+            this.blink_b_1.TabIndex = 17;
+            this.blink_b_1.Text = "BLINK_B1";
+            this.blink_b_1.UseVisualStyleBackColor = true;
+            this.blink_b_1.Click += new System.EventHandler(this.blink_b_1_Click);
+            // 
+            // blink_b_2
+            // 
+            this.blink_b_2.Location = new System.Drawing.Point(88, 215);
+            this.blink_b_2.Name = "blink_b_2";
+            this.blink_b_2.Size = new System.Drawing.Size(75, 23);
+            this.blink_b_2.TabIndex = 18;
+            this.blink_b_2.Text = "BLINK_B2";
+            this.blink_b_2.UseVisualStyleBackColor = true;
+            this.blink_b_2.Click += new System.EventHandler(this.blink_b_2_Click);
+            // 
+            // b_2_interval
+            // 
+            this.b_2_interval.Location = new System.Drawing.Point(169, 215);
+            this.b_2_interval.Name = "b_2_interval";
+            this.b_2_interval.Size = new System.Drawing.Size(43, 20);
+            this.b_2_interval.TabIndex = 19;
+            // 
+            // b_1_interval
+            // 
+            this.b_1_interval.Location = new System.Drawing.Point(169, 190);
+            this.b_1_interval.Name = "b_1_interval";
+            this.b_1_interval.Size = new System.Drawing.Size(43, 20);
+            this.b_1_interval.TabIndex = 20;
+            // 
+            // y_2_interval
+            // 
+            this.y_2_interval.Location = new System.Drawing.Point(169, 155);
+            this.y_2_interval.Name = "y_2_interval";
+            this.y_2_interval.Size = new System.Drawing.Size(43, 20);
+            this.y_2_interval.TabIndex = 21;
+            // 
+            // y_1_interval
+            // 
+            this.y_1_interval.Location = new System.Drawing.Point(169, 130);
+            this.y_1_interval.Name = "y_1_interval";
+            this.y_1_interval.Size = new System.Drawing.Size(43, 20);
+            this.y_1_interval.TabIndex = 22;
+            // 
+            // r_2_interval
+            // 
+            this.r_2_interval.Location = new System.Drawing.Point(169, 95);
+            this.r_2_interval.Name = "r_2_interval";
+            this.r_2_interval.Size = new System.Drawing.Size(43, 20);
+            this.r_2_interval.TabIndex = 23;
+            // 
+            // r_1_interval
+            // 
+            this.r_1_interval.Location = new System.Drawing.Point(169, 70);
+            this.r_1_interval.Name = "r_1_interval";
+            this.r_1_interval.Size = new System.Drawing.Size(43, 20);
+            this.r_1_interval.TabIndex = 24;
+            // 
+            // g_2_interval
+            // 
+            this.g_2_interval.Location = new System.Drawing.Point(169, 31);
+            this.g_2_interval.Name = "g_2_interval";
+            this.g_2_interval.Size = new System.Drawing.Size(43, 20);
+            this.g_2_interval.TabIndex = 25;
+            // 
+            // blink_all
+            // 
+            this.blink_all.Location = new System.Drawing.Point(713, 132);
+            this.blink_all.Name = "blink_all";
+            this.blink_all.Size = new System.Drawing.Size(75, 23);
+            this.blink_all.TabIndex = 26;
+            this.blink_all.Text = "BLINK_ALL";
+            this.blink_all.UseVisualStyleBackColor = true;
+            this.blink_all.Click += new System.EventHandler(this.blink_all_Click);
+            // 
+            // blink_all_interval
+            // 
+            this.blink_all_interval.Location = new System.Drawing.Point(713, 158);
+            this.blink_all_interval.Name = "blink_all_interval";
+            this.blink_all_interval.Size = new System.Drawing.Size(75, 20);
+            this.blink_all_interval.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.blink_all_interval);
+            this.Controls.Add(this.blink_all);
+            this.Controls.Add(this.g_2_interval);
+            this.Controls.Add(this.r_1_interval);
+            this.Controls.Add(this.r_2_interval);
+            this.Controls.Add(this.y_1_interval);
+            this.Controls.Add(this.y_2_interval);
+            this.Controls.Add(this.b_1_interval);
+            this.Controls.Add(this.b_2_interval);
+            this.Controls.Add(this.blink_b_2);
+            this.Controls.Add(this.blink_b_1);
+            this.Controls.Add(this.blink_y_2);
+            this.Controls.Add(this.blink_y_1);
+            this.Controls.Add(this.blink_g_2);
+            this.Controls.Add(this.blink_r_2);
+            this.Controls.Add(this.blink_r_1);
+            this.Controls.Add(this.g_1_interval);
+            this.Controls.Add(this.blink_g_1);
             this.Controls.Add(this.Off_All);
             this.Controls.Add(this.On_All);
             this.Controls.Add(this.blue_2);
@@ -182,6 +371,24 @@
         private System.Windows.Forms.CheckBox blue_2;
         private System.Windows.Forms.Button On_All;
         private System.Windows.Forms.Button Off_All;
+        private System.Windows.Forms.Button blink_g_1;
+        private System.Windows.Forms.TextBox g_1_interval;
+        private System.Windows.Forms.Button blink_r_1;
+        private System.Windows.Forms.Button blink_r_2;
+        private System.Windows.Forms.Button blink_g_2;
+        private System.Windows.Forms.Button blink_y_1;
+        private System.Windows.Forms.Button blink_y_2;
+        private System.Windows.Forms.Button blink_b_1;
+        private System.Windows.Forms.Button blink_b_2;
+        private System.Windows.Forms.TextBox b_2_interval;
+        private System.Windows.Forms.TextBox b_1_interval;
+        private System.Windows.Forms.TextBox y_2_interval;
+        private System.Windows.Forms.TextBox y_1_interval;
+        private System.Windows.Forms.TextBox r_2_interval;
+        private System.Windows.Forms.TextBox r_1_interval;
+        private System.Windows.Forms.TextBox g_2_interval;
+        private System.Windows.Forms.Button blink_all;
+        private System.Windows.Forms.TextBox blink_all_interval;
     }
 }
 
