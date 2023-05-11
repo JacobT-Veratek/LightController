@@ -46,11 +46,6 @@ namespace LightController
             port.Write(blinkCommand);
         }
 
-        void SimulStart(System.Windows.Forms.TextBox allIntervals)
-        {
-
-        }
-
         private void green_1_CheckedChanged(object sender, EventArgs e)
         {
             OnOff(green_1, 0);
@@ -138,7 +133,23 @@ namespace LightController
 
         private void simultaneous_start_Click(object sender, EventArgs e)
         {
-            port.Write("simul start\n");
+            TextBox[] TextBoxList = {
+                g_1_interval,
+                g_2_interval,
+                r_1_interval,
+                r_2_interval,
+                y_1_interval,
+                y_2_interval,
+                b_1_interval,
+                b_2_interval,
+            };
+
+
+            int iled = 0;
+            for (iled = 0; iled < 8; iled++)
+            {
+                BlinkLed(iled, TextBoxList[iled]);
+            }
         }
     }
 }

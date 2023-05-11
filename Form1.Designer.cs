@@ -183,6 +183,7 @@
             this.g_1_interval.Name = "g_1_interval";
             this.g_1_interval.Size = new System.Drawing.Size(43, 20);
             this.g_1_interval.TabIndex = 11;
+            this.g_1_interval.Tag = "iled";
             // 
             // blink_r_1
             // 
@@ -260,6 +261,7 @@
             this.b_2_interval.Name = "b_2_interval";
             this.b_2_interval.Size = new System.Drawing.Size(43, 20);
             this.b_2_interval.TabIndex = 19;
+            this.b_2_interval.Tag = "iled";
             // 
             // b_1_interval
             // 
@@ -267,6 +269,7 @@
             this.b_1_interval.Name = "b_1_interval";
             this.b_1_interval.Size = new System.Drawing.Size(43, 20);
             this.b_1_interval.TabIndex = 20;
+            this.b_1_interval.Tag = "iled";
             // 
             // y_2_interval
             // 
@@ -274,6 +277,7 @@
             this.y_2_interval.Name = "y_2_interval";
             this.y_2_interval.Size = new System.Drawing.Size(43, 20);
             this.y_2_interval.TabIndex = 21;
+            this.y_2_interval.Tag = "iled";
             // 
             // y_1_interval
             // 
@@ -281,6 +285,7 @@
             this.y_1_interval.Name = "y_1_interval";
             this.y_1_interval.Size = new System.Drawing.Size(43, 20);
             this.y_1_interval.TabIndex = 22;
+            this.y_1_interval.Tag = "iled";
             // 
             // r_2_interval
             // 
@@ -288,6 +293,7 @@
             this.r_2_interval.Name = "r_2_interval";
             this.r_2_interval.Size = new System.Drawing.Size(43, 20);
             this.r_2_interval.TabIndex = 23;
+            this.r_2_interval.Tag = "iled";
             // 
             // r_1_interval
             // 
@@ -295,6 +301,7 @@
             this.r_1_interval.Name = "r_1_interval";
             this.r_1_interval.Size = new System.Drawing.Size(43, 20);
             this.r_1_interval.TabIndex = 24;
+            this.r_1_interval.Tag = "iled";
             // 
             // g_2_interval
             // 
@@ -302,6 +309,7 @@
             this.g_2_interval.Name = "g_2_interval";
             this.g_2_interval.Size = new System.Drawing.Size(43, 20);
             this.g_2_interval.TabIndex = 25;
+            this.g_2_interval.Tag = "iled";
             // 
             // blink_all
             // 
@@ -328,7 +336,6 @@
             this.simultaneous_start.TabIndex = 28;
             this.simultaneous_start.Text = "START_ALL";
             this.simultaneous_start.UseVisualStyleBackColor = true;
-            this.simultaneous_start.Visible = false;
             this.simultaneous_start.Click += new System.EventHandler(this.simultaneous_start_Click);
             // 
             // Form1
