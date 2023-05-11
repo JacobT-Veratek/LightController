@@ -46,6 +46,11 @@ namespace LightController
             port.Write(blinkCommand);
         }
 
+        void SimulStart(System.Windows.Forms.TextBox allIntervals)
+        {
+
+        }
+
         private void green_1_CheckedChanged(object sender, EventArgs e)
         {
             OnOff(green_1, 0);

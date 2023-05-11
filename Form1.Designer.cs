@@ -328,6 +328,7 @@
             this.simultaneous_start.TabIndex = 28;
             this.simultaneous_start.Text = "START_ALL";
             this.simultaneous_start.UseVisualStyleBackColor = true;
+            this.simultaneous_start.Visible = false;
             this.simultaneous_start.Click += new System.EventHandler(this.simultaneous_start_Click);
             // 
             // Form1
